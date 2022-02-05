@@ -81,10 +81,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
- ───「[Prime Mega](https://t.me/PrimeMegaBot)」───
-*Hello {} !*
-────────────────────────
-PrimeMega a powerful group management bot built to help you manage your group!
+ ───「[Zenzu Robot](https://t.me/ZenzuRobot)」───
+*Hello {} I'ts Zenzu Robot!*
+────────────────────
+Zenzu Robot a powerful group management bot built to help you manage your group!
 ────────────────────
 Hit the /help or tap on button to se available command on me.
 """
@@ -92,18 +92,19 @@ Hit the /help or tap on button to se available command on me.
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ Add Prime Mega to your group ➕️", url="t.me/PrimeMegaBot?startgroup=true"
+            text="👋 Undang Zenzu Robot ", url="t.me/ZenzuRobot?startgroup=true"
+            text="⭐ Come get acquainted with me", url="t.me/Zenzuzu2"
         ),
     ],
     [
-        InlineKeyboardButton(text="Support", url="https://t.me/PrimeSupportGroup"
+        InlineKeyboardButton(text="Channel", url="https://t.me/Zenzu_shop"
         ),
         InlineKeyboardButton(
             text="TryInline", switch_inline_query_current_chat=""
         ),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands❔", callback_data="help_back"
+        InlineKeyboardButton(text="Butuh Bantuan❔", callback_data="help_back"
         ),
     ],
 ]
@@ -362,7 +363,7 @@ def prime_about_callback(update, context):
     query = update.callback_query
     if query.data == "prime_":
         query.message.edit_text(
-            text="๏ I'm *Prime Mega*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Zenzu Robot*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
@@ -536,6 +537,8 @@ def get_help(update: Update, context: CallbackContext):
                                 text="Help",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
+                                text="Channel",
+                                url="(t.me/Zenzu_shop)
                                 ),
                             )
                         ]
