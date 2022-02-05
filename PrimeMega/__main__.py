@@ -369,7 +369,7 @@ def prime_about_callback(update, context):
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_PrimeMega's licensed under the GNU General Public License v3.0_"
+            "\n\n_Zenzu Robot licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for PrimeMega.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -410,7 +410,7 @@ def prime_about_callback(update, context):
     elif query.data == "prime_admin":
         query.message.edit_text(
             text=f"*๏ Let's make your group bit effective now*"
-            "\nCongragulations, Prime Mega now ready to manage your group."
+            "\nCongragulations, Zenzu Robot now ready to manage your group."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -437,14 +437,14 @@ def prime_about_callback(update, context):
         )
     elif query.data == "prime_support":
         query.message.edit_text(
-            text="*๏ PrimeMega support chats*"
+            text="*๏ Zenzu Robot support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on PrimeMega.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Support", url="t.me/PrimeSupportGroup"),
-                    InlineKeyboardButton(text="Updates", url="https://t.me/PrimeSupportChannel"),
+                    InlineKeyboardButton(text="Support", url="https://t.me/ZenzuRobotSupport"),
+                    InlineKeyboardButton(text="Updates", url="https://t.me/Zenzu_Shop"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_"),
@@ -457,14 +457,14 @@ def prime_about_callback(update, context):
 
     elif query.data == "prime_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for primeMega</b>\n"
+            text=f"<b>๏ Credis for Zenzu Robot</b>\n"
             f"\nHere Developers Making The PrimeMegaRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Tonic", url="t.me/Bukan_guudlooking"),
-                    InlineKeyboardButton(text="x~b", url="t.me/Xbarok"),
+                    InlineKeyboardButton(text="Zenzu", url="t.me/Zenzuzu2"),
+                    InlineKeyboardButton(text="Channel", url="t.me/Zenzu_Shop"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Back", callback_data="prime_"),
@@ -791,7 +791,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi friends, I'm alive.",
+                "👀 Zenzu Robot sudah bangun.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
