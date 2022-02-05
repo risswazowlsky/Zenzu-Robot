@@ -9,16 +9,18 @@ from PrimeMega.events import register
 from PrimeMega import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/efc27dec817626cc95016.jpg"
+PHOTO = "https://telegra.ph/file/6a6521ee7dc443c28e351.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
-  PRIME = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), I'm Prime Mega.** \n\n"
-  PRIME += "⚪ **I'm Working Properly** \n\n"
-  PRIME += f"⚪ **My Master : [Lord](https://t.me/Bukan_guudlooking)** \n\n"
-  PRIME += f"⚪ **Library Version :** `{telever}` \n\n"
-  PRIME += f"⚪ **Telethon Version :** `{tlhver}` \n\n"
-  PRIME += f"⚪ **Pyrogram Version :** `{pyrover}` \n\n"
+  PRIME = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), It's Zenzu Robot.** \n\n"
+  PRIME += "💡 **I'm Working Properly** \n\n"
+  PRIME += f"👋 **My Master : [Lord](https://t.me/zenzuzu2)** \n\n"
+  PRIME += f"⭐ **Groups : [Zenzu Support](https://t.me/ZenzuRobotSupport)** \n\n"
+  PRIME += f"⚡ **Channel : [My Channel](https://t.me/zenzu_shop)** \n\n"
+  PRIME += f"🔗 **Library Version :** `{telever}` \n\n"
+  PRIME += f"🔗 **Telethon Version :** `{tlhver}` \n\n"
+  PRIME += f"🔗 **Pyrogram Version :** `{pyrover}` \n\n"
   PRIME += "**Thanks For Adding Me Here ❤️**"
-  BUTTON = [[Button.url("ʜᴇʟᴘ​", "https://t.me/PrimeMegaBot?start=help"), Button.url("sᴜᴘᴘᴏʀᴛ​", "https://t.me/PrimeSupportGroup")]]
+  BUTTON = [[Button.url("Help", "https://t.me/ZenzuRobot?start=help"), Button.url("Support​", "https://t.me/ZenzuRobotSupport")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=PRIME,  buttons=BUTTON)
