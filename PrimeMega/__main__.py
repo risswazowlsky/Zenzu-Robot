@@ -536,8 +536,6 @@ def get_help(update: Update, context: CallbackContext):
                                 text="Help",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
-                                text="Channel",
-                                url="(t.me/Zenzu_shop)
                                 ),
                             )
                         ]
