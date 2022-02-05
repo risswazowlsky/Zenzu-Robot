@@ -93,7 +93,6 @@ buttons = [
         [
         InlineKeyboardButton(
             text="👋 Undang Zenzu Robot ", url="t.me/ZenzuRobot?startgroup=true"
-            text="⭐ Come get acquainted with me", url="t.me/Zenzuzu2"
         ),
     ],
     [
